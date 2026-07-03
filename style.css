@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:url("photos/reception.jpg") center center/cover no-repeat fixed;
+    min-height:100vh;
+}
+
+.overlay{
+    width:100%;
+    min-height:100vh;
+    background:rgba(0,0,0,.60);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 15px;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:30px 25px;
+    text-align:center;
+    color:#fff;
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.logo{
+    width:90px;
+    margin-bottom:15px;
+}
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #fff;
+    margin:10px auto 20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+    font-size:32px;
+    font-weight:700;
+}
+
+h2{
+    font-size:18px;
+    color:#ffd54f;
+    margin-top:6px;
+}
+
+.about{
+    margin:18px 0 25px;
+    line-height:1.7;
+    font-size:14px;
+    color:#f1f1f1;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    padding:13px;
+    text-decoration:none;
+    border:none;
+    border-radius:12px;
+    background:#ffffff;
+    color:#222;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.green{
+    background:#25D366;
+    color:#fff;
+}
+
+.blue{
+    background:#1877F2;
+    color:#fff;
+}
+
+.orange{
+    background:#ff9800;
+    color:#fff;
+}
+
+h3{
+    margin:35px 0 20px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:30px;
+    color:#ddd;
+    font-size:13px;
+}
+
+@media(max-width:480px){
+
+.card{
+    padding:25px 18px;
+}
+
+.profile{
+    width:130px;
+    height:130px;
+}
+
+.buttons{
+    grid-template-columns:1fr;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+}
